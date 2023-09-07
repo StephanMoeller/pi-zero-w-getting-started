@@ -15,14 +15,14 @@ ssh -l myusername
 # File sharing (https://pimylifeup.com/raspberry-pi-samba/
 ```
 sudo apt-get install samba samba-common-bin
-mkdir /home/pi/shared
+mkdir /home/(my_username)/shared
 sudo nano /etc/samba/smb.conf
 ```
 
 - add to bottom:
 ```
 [myshare]
-path = /home/pi/shared
+path = /home/(my_username)/shared
 writeable=Yes
 create mask=0777
 directory mask=0777
