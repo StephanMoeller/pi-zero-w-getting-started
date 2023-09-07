@@ -37,3 +37,9 @@ sudo systemctl restart smbd
 
 # Access share from windows
 access: \\(IP)\myshare
+
+# Install dotnet
+https://learn.microsoft.com/en-us/dotnet/iot/deployment
+```
+curl -sSL https://dot.net/v1/dotnet-install.sh | bash /dev/stdin --channel STS
+```
