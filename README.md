@@ -12,6 +12,12 @@
 ssh -l myusername
 ```
 
+# Update packages
+```
+apt-get update
+apt-get upgrade
+```
+
 # File sharing (https://pimylifeup.com/raspberry-pi-samba/
 ```
 sudo apt-get install samba samba-common-bin
@@ -38,10 +44,9 @@ sudo systemctl restart smbd
 # Access share from windows
 access: \\(IP)\myshare
 
-# Prepare for rust programming - on the local windows dev machine
-https://www.freecodecamp.org/news/embedded-rust-programming-on-raspberry-pi-zero-w/#targets
+# Prepare for rust programming
+- run on pi:
 
-- Run (NOTE - in the link above, "target" and "add" are in the wrong order):
 ```
-rustup target add arm-unknown-linux-gnueabihf
+apt-get install cargo
 ```
