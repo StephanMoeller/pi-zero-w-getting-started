@@ -66,3 +66,7 @@ cd my_project
 ```
 cargo run
 ```
+
+# Building gpio apps
+
+https://www.freecodecamp.org/news/embedded-rust-programming-on-raspberry-pi-zero-w/#completethecircuit
