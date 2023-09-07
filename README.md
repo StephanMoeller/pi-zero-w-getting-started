@@ -31,7 +31,7 @@ public=no
 
 - run:
 ```
-sudo smbpasswd -a pi
+sudo smbpasswd -a (my_username)
 sudo systemctl restart smbd
 ```
 
