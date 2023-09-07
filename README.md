@@ -50,3 +50,19 @@ access: \\(IP)\myshare
 ```
 apt-get install cargo
 ```
+
+- Navigate to the shared folder
+- Run:
+```
+cargo new my_project
+```
+
+- go to the new folder:
+```
+cd my_project
+```
+
+- Run hello-world program:
+```
+cargo run
+```
