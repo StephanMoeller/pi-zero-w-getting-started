@@ -7,7 +7,10 @@
 - Write and wait
 - Plug in card into pi zero w and wait for 5 minutes
 - Login to your home router and see what ip the device has gotten
-- Login to the pi in windows using built in ssh client
+- Login to the pi in windows using built in ssh client:
+```
+ssh -l myusername
+```
 
 # File sharing (https://pimylifeup.com/raspberry-pi-samba/
 ```
