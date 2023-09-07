@@ -38,14 +38,10 @@ sudo systemctl restart smbd
 # Access share from windows
 access: \\(IP)\myshare
 
-# Install dotnet
-https://learn.microsoft.com/en-us/dotnet/iot/deployment
-```
-curl -sSL https://dot.net/v1/dotnet-install.sh | bash /dev/stdin --channel STS
-```
+# Prepare for rust programming - on the local windows dev machine
+https://www.freecodecamp.org/news/embedded-rust-programming-on-raspberry-pi-zero-w/#targets
 
+- Run (NOTE - in the link above, "target" and "add" are in the wrong order):
 ```
-echo 'export DOTNET_ROOT=$HOME/.dotnet' >> ~/.bashrc
-echo 'export PATH=$PATH:$HOME/.dotnet' >> ~/.bashrc
-source ~/.bashrc
+rustup target add arm-unknown-linux-gnueabihf
 ```
