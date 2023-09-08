@@ -14,8 +14,8 @@ ssh -l myusername
 
 # Update packages
 ```
-apt-get update
-apt-get upgrade
+apt update
+apt upgrade
 ```
 
 # File sharing (https://pimylifeup.com/raspberry-pi-samba/
@@ -48,7 +48,7 @@ access: \\(IP)\myshare
 - run on pi:
 
 ```
-apt-get install cargo
+curl https://sh.rustup.rs -sSf | sh
 ```
 
 - Navigate to the shared folder
