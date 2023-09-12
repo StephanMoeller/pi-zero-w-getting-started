@@ -41,6 +41,11 @@ sudo smbpasswd -a dd
 sudo systemctl restart smbd
 ```
 
+# Enable camera - https://raspberrytips.com/install-camera-raspberry-pi/
+```
+sudo raspi-config
+```
+
 # Access share from windows
 access: \\192.168.0.108\myshare
 
