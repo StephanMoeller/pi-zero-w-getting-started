@@ -14,8 +14,8 @@ ssh -l myusername
 
 # Update packages
 ```
-apt update
-apt upgrade
+sudo apt update
+sudo apt upgrade
 ```
 
 # File sharing (https://pimylifeup.com/raspberry-pi-samba/
