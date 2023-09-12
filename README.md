@@ -21,14 +21,14 @@ apt upgrade
 # File sharing (https://pimylifeup.com/raspberry-pi-samba/
 ```
 sudo apt-get install samba samba-common-bin
-mkdir /home/(my_username)/shared
+mkdir /home/dd/shared
 sudo nano /etc/samba/smb.conf
 ```
 
 - add to bottom:
 ```
 [myshare]
-path = /home/(my_username)/shared
+path = /home/dd/shared
 writeable=Yes
 create mask=0777
 directory mask=0777
@@ -37,12 +37,12 @@ public=no
 
 - run:
 ```
-sudo smbpasswd -a (my_username)
+sudo smbpasswd -a dd
 sudo systemctl restart smbd
 ```
 
 # Access share from windows
-access: \\(IP)\myshare
+access: \\192.168.0.108\myshare
 
 # Prepare for rust programming
 - run on pi:
