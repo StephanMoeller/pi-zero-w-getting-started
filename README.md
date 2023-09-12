@@ -20,7 +20,7 @@ sudo apt upgrade
 
 # File sharing (https://pimylifeup.com/raspberry-pi-samba/
 ```
-sudo apt-get install samba samba-common-bin
+sudo apt-get install samba samba-common-bin -y
 mkdir /home/dd/shared
 sudo nano /etc/samba/smb.conf
 ```
